@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.btnmenu {
+    padding: 10px 21px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.btn-menuu {
+    width: 30px;
+
+}
+
+.navbar-all {
+    //    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: black;
+
+    .nright {
+        padding: 10px;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            margin: 20px;
+        }
+
+        button {
+
+            padding: 10px 21px;
+            border: none;
+            outline: none;
+            background: none;
+            background-color: yellow;
+            border-radius: 0 0 20px 0;
+        }
+    }
+}
+
+
+.navbar-bottom {
+    padding-top: 280px;
+
+    .biglogo {
+
+        text-align: center;
+    }
+
+    .vidio {
+        position: absolute;
+        right: 200px;
+
+        .vtop {
+            padding-top: 20px;
+
+            p {
+                font-size: 18px;
+                color: white;
+            }
+        }
+
+        .vbottom {
+            display: flex;
+            align-items: center;
+            padding-top: 25px;
+
+            a {
+                text-decoration: none;
+                color: yellow;
+                font-size: 20px;
+                padding-left: 20px;
+            }
+
+            img {
+                width: 60px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+    .nright {
+        display: none;
+    }
+
+    .btnmenu {
+        display: block;
+    }
+
+    .navbar-bottom {
+
+        .fist {
+            width: 400px;
+        }
+    }
+
+    .biglogo {
+        position: absolute;
+        top: 200px;
+        left: 50px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+
+    .biglogo {
+        padding-left: 10px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .navbar {
+        background: none;
+        background-color: black;
+    }
+
+    .biglogo {
+        position: absolute;
+        top: 130px;
+    }
+
+
+
+    .vidio {
+        position: absolute;
+        left: 40px;
+        top: 190px;
+
+    }
+
+    .navbar-bottom {
+
+        .fist {
+            width: 250px;
+        }
+    }
+
+
+
+}
+
